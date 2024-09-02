@@ -27,6 +27,15 @@ form.addEventListener("submit", function(event){
 
     document.body.innerHTML = ""
     document.write(`<p>${userId}님 환영합니다.</p>`)
+    document.write(
+        `<p>
+            회원 가입 시 입력하신 내역은 다음과 같습니다.<br>
+            아이디 : ${userId}<br>
+            이름 : ${username}<br>
+            전화번호 : ${userPhone}<br>
+            원하는 직무 : ${userPosition}
+        </p>`
+    )
 })
 //제출된 입력 값들을 참조한다
 
