@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>DOM 메소드 및 속성</title>
+</head>
+<body>
+    <h1 id="song-title" class="heading text" 
+    title="VOS의 2019년 발매곡">
+        <span>다시 만날까 봐</span>
+    </h1>
+    <p class="lyrics">
+        인스타로 몰래 보는 너의 하루들 누가 봐도 헤어진 티를 내
+    </p>
+    <p class="lyrics">
+        팔로우 다 끊고서 좋아요는 왜 눌렀니 (ㅋㅋ)
+    </p>
+
+    <script>
+        //선택자 메소드
+        console.log(document.querySelectorAll('.lyrics'))
+        //NodeList
+        console.log(
+        document.getElementsByClassName("lyrics"))
+        //HTMLCollection
+        const title = document.getElementById("song-title")
+        console.log(title)
+        //const로 정의
+
+        console.log(title.textContent)
+        //공백있음
+        console.log(title.innerText)
+        //공백 없음
+
+        console.log(title.className)
+        //클래스이름
+        console.log(title.style)
+        //스타일확인
+        console.log(title.title)
+        //타이틀확인
+    </script>
+</body>
+</html>
